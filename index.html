@@ -1,17 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Poem</title>
+
 <style>
 
+body{
+    margin:0;
+    font-family: Georgia, serif;
+}
+
+/* ---------------- SECTION 1 ---------------- */
+
+#section1{
+    height:80vh;
+    overflow-y:scroll;
+    position:relative;
+    border-bottom:5px solid black;
+}
+
+/* Background Image */
+#section1::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    opacity:0.3;
+    z-index:-1;
+}
+
+/* Headings */
+h1{
+    margin-left:20px;
+}
+
+h2{
+    text-align:center;
+    text-decoration: underline overline solid black;
+}
+
+/* Paragraph Styling */
+.bold{
+    font-weight:bold;
+}
+
+p{
+    text-align:justify;
+    width:50vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p:hover{
+    outline:2px double red;
+}
+
+/* ---------------- SECTION 2 ---------------- */
+
+#section2{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        90deg,
+        rgba(131,58,180,1) 0%,
+        rgba(29,211,253,1) 50%,
+        rgba(252,176,69,1) 100%
+    );
+}
+
+/* The White Card */
+#section2 div{
+    width:70%;
+    height:70%;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:40px;
+}
+
+#section2 h1{
+    margin:0;
+}
+
 </style>
+</head>
+
 <body>
 
+<section id="section1">
 
+    <h1>Sample Poem</h1>
+    <h2>Come to Labs</h2>
 
-	
+    <p>
+        <span class="bold">Why</span> won't students come to labs? This is something I always ponder. After unprepared students write exams, They watch their marks in wonder.
+    </p>
+
+    <p>
+        <span class="bold">Why</span> won't students come to labs? What is more important than class? How can you be a student if you don't even try to pass?
+    </p>
+
+    <p>
+        <span class="bold">Why</span> won't students come to labs? It happens all the time. If you came to labs, you'd know what to do. But you would rather duck and go lime.
+    </p>
+
+    <p>
+        <span class="bold">Why</span> won't students come to labs? I see them all now stressing. If you only learned this basic programming, You would surely now be zessing.
+    </p>
+
+</section>
+
+<section id="section2">
+    <div>
+        <h1>My Div</h1>
+    </div>
+</section>
+
 </body>
 </html>
